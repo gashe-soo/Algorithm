@@ -10,4 +10,4 @@
 
 #### Problem Solving
 Commit Message : Date
-How to Solve : Read Code Comment OR [github blog] (https://yisookim.github.io) 
+How to Solve : Read Code Comment OR [github blog] (https://gashe-soo.github.io) 
