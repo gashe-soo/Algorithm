@@ -6,6 +6,11 @@
 
 using namespace std;
 
+// 1. 시간을 모두 정수로 변환.
+// 2. 시간별 1초후에 포함되어있는 지 확인
+// 2-1. 확인할 경우는 시작, 완료 시간만 확인하면 된다.
+// 3. 시작 시간, 완료 시간 순으로 정렬해서 각각 확인.
+
 bool cmp(pair<int,int> a, pair<int,int> b){return a.first<b.first;}
 bool cmp2(pair<int,int> a, pair<int,int> b){return a.second<b.second;}
 
