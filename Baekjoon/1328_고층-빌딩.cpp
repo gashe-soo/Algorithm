@@ -1,5 +1,8 @@
 // 백준 1328번 고층 빌딩
 
+// dp문제
+// 1. 문제 접근은 거의 다 맞게 했지만 코드 작성에서 문제.
+
 #include <iostream>
 #include <cstring> 
 

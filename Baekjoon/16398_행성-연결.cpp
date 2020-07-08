@@ -21,13 +21,11 @@ bool cmp(node a, node b) {
 	return a.second < b.second;
 }
 
+// 2-1.
 int find(int num) {
 	if (num == v[num]) return num;
 	return v[num] = find(v[num]);
 }
-
-
-
 
 int main() {
 	ios_base::sync_with_stdio(0);
@@ -54,7 +52,7 @@ int main() {
 		int a = find(x);
 		int b = find(y);
 		if (a != b) {
-			v[b] = a;
+			v[b] = a;	// 2-1.union , 무조건 숫자가 작은 쪽으로 합치기.
 			ret--;
 			ans += c;
 		}

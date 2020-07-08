@@ -1,8 +1,8 @@
 // 백준 14502번 연구소
 
-// 1. 바이러스가 있는 곳을 저장.
-// 2. 벽을 세울 수 있는 곳을 모두 세운다. 총 3개고 가능한 개수는 최대 64개이므로 64C3으로 브루트 포스 가능
-// 3. 3개 세운 조합마다 바이러스 퍼지게 한 후 안전영역 확인.
+// 1. dfs + bfs합친 문제
+// 2. dfs로 가능한 벽 세개 세우기
+// 3. bfs로 조합마다 안전영역 확인
 
 #include <iostream>
 #include <queue>
@@ -16,6 +16,7 @@ int dy[4] = { 0,0,-1,1 };
 
 vector<pi> two;
 
+// 3.
 int bfs(vector<vector<int>> map) {
 	queue<pi> q;
 	vector<vector<bool>> visit(n, vector<bool>(m, 0));
@@ -41,10 +42,10 @@ int bfs(vector<vector<int>> map) {
 		}
 	}
 
-
 	return ret;
 }
 
+// 2.
 void go(int cnt, int x, vector<vector<int>> map, vector<vector<bool>> v) {
 	if (cnt == 3) {
 		int t = bfs(map);
