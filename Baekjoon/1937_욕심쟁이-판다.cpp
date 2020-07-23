@@ -3,7 +3,7 @@
 /*
 처음엔 bfs+dp로 풀어서 시간초과
 
-dp 메모이제이션으로 풀이해서 해결.
+dp 로 풀이해서 해결.
 */
 #include <iostream>
 #include <algorithm>
