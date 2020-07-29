@@ -9,5 +9,14 @@
 - AlgoSpot(알고리즘 문제해결전략)
 
 #### Problem Solving
-Commit Message : Date
+Commit Message : Date + solve or fail
 How to Solve : Read Code Comment OR [github blog] (https://gashe-soo.github.io) 
+
+#### Current
+
+| Site        | number |
+| ----------- | ------ |
+| Programmers | 84     |
+| Baekjoon    | 38     |
+| Algospot    | 6      |
+
