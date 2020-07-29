@@ -9,7 +9,7 @@
 - AlgoSpot(알고리즘 문제해결전략)
 
 #### Problem Solving
-Commit Message : Date + solve or fail
+Commit Message : Date + solve or fail<br/>
 How to Solve : Read Code Comment OR [github blog] (https://gashe-soo.github.io) 
 
 #### Current
