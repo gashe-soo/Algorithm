@@ -17,6 +17,6 @@ How to Solve : Read Code Comment OR [github blog] (https://gashe-soo.github.io)
 | Site        | number |
 | ----------- | ------ |
 | Programmers | 84     |
-| Baekjoon    | 38     |
+| Baekjoon    | 56     |
 | Algospot    | 8      |
 
