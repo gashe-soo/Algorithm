@@ -1,4 +1,4 @@
-// น้มุ 2294น๘ ตฟภü
+// ๋ฐฑ์ค€ 2294๋ฒ ๋์ 
 
 #include <algorithm>
 #include <iostream>
