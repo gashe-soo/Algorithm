@@ -1,7 +1,6 @@
-// ¹éÁØ 1507¹ø ±Ã±ÝÇÑ ¹ÎÈ£
+// ë°±ì¤€ 1507ë²ˆ ê¶ê¸ˆí•œ ë¯¼í˜¸
 
 /*
-ÇÃ·ÎÀÌµå ¿Í¼£
 
 */
 
@@ -13,39 +12,42 @@ int n;
 int city[20][20];
 bool v[20][20];
 
-int main() {
-	ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);
-	cin >> n;
-	
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			cin >> city[i][j];
-		}
-	}
-	for (int k = 0; k < n; k++) {
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				if (i == j || j == k || k == i) continue;
-				if (city[i][j] == city[i][k] + city[k][j]) {
-					v[i][j] = true;
-				}
-				else if (city[i][j] > city[i][k] + city[k][j]) {
-					cout << "-1";
-					return 0;
-				}
-			}
-		}
-	}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    cin >> n;
 
-	int answer = 0;
-	for (int i = 0; i < n; i++) {
-		for (int j = i+1; j < n; j++) {
-			if (!v[i][j]) {
-				answer += city[i][j];
-			}
-		}
-	}
-	cout << answer;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> city[i][j];
+        }
+    }
+    for (int k = 0; k < n; k++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == j || j == k || k == i)
+                    continue;
+                if (city[i][j] == city[i][k] + city[k][j]) {
+                    v[i][j] = true;
+                } else if (city[i][j] > city[i][k] + city[k][j]) {
+                    cout << "-1";
+                    return 0;
+                }
+            }
+        }
+    }
 
-	return 0;
+    int answer = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (!v[i][j]) {
+                answer += city[i][j];
+            }
+        }
+    }
+    cout << answer;
+
+    return 0;
 }
