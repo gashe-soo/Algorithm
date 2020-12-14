@@ -10,12 +10,12 @@ typedef pair<int, int> pi;
 
 int n;
 vector<pi> adj[10001];
-int far = 0;
+int far;
 
 int bfs(int s)
 {
     queue<pi> q;
-    vector<int> dist(n + 1, 0);
+    vector<int> dist(n + 1, -1);
 
     q.push({ 0, s });
     dist[s] = 0;
@@ -25,7 +25,7 @@ int bfs(int s)
         int from = q.front().second;
         q.pop();
         for (pi p : adj[from]) {
-            if (dist[p.first])
+            if (dist[p.first] != -1)
                 continue;
             dist[p.first] = cost + p.second;
             q.push({ dist[p.first], p.first });
@@ -51,7 +51,6 @@ int main()
 
     int r1 = bfs(1);
     int r2 = bfs(far);
-
     cout << max(r1, r2);
 
     return 0;
