@@ -7,16 +7,20 @@
 - 백준 알고리즘
 - 삼성SWexpert
 - AlgoSpot(알고리즘 문제해결전략)
+- Leetcode
+- HankerRank
 
 #### Problem Solving
-Commit Message : Date + solve or fail<br/>
-How to Solve : Read Code Comment OR [github blog] (https://gashe-soo.github.io) 
+Commit Message : Date + Platform<br/>
+How to Solve : Read Code Comment
 
-#### Current
+#### Current (~21/01/22)
 
 | Site        | number |
 | ----------- | ------ |
-| Programmers | 90     |
-| Baekjoon    | 64     |
+| Programmers | 93     |
+| Baekjoon    | 161    |
 | Algospot    | 8      |
+| Leetcode    | 71     |
+| Hacker Rank | 15     |
 
